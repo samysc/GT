@@ -1,0 +1,8 @@
+2 bornes de commandes 
+1 borne de caisse 
+1 imprimeur caisse / 1 imprimeur cuisine
+1 switch
+
+le client commande à la borne -> ticket
+le client paie à la caisse avec son ticket -> facture ou non et attribution du biper
+le ticket validé sort dans l'imprimeur de la cuisine 
