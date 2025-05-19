@@ -15,24 +15,24 @@ export const meatsOptions = [
   export const supplementsOptions = [
     { value: "Cheddar", label: "Cheddar +1€", img: "/img/supp_cheddar.png" },
     { value: "Feta", label: "Feta +1€", img: "/img/supp_feta.png" },
-    { value: "Chèvre Miel", label: "Chèvre Miel +1€", img: "/img/supp_chevre_miel.png" },
+    { value: "Chèvre Miel", label: "Chèvre Miel +1€", img: "img/supp_chevre_miel.png" },
     { value: "Raclette", label: "Raclette +1€", img: "/img/supp_raclette.png" },
     { value: "Boursin", label: "Boursin +1€", img: "/img/supp_boursin.png" },
     { value: "Kiri", label: "Kiri +1€", img: "/img/supp_kiri.png" },
-    { value: "Galette de PDT", label: "Galette de PDT +1€", img: "/img/supp_pdt.png" },
+    { value: "Galette de PDT", label: "Galette de PDT +1€", img: "/img/supp_galette_pdt.png" },
     { value: "Bacon de Dinde", label: "Bacon de Dinde +1€", img: "/img/supp_bacon.png" },
     { value: "Œuf", label: "Œuf +1€", img: "/img/supp_oeuf.png" },
   ];
   
   export const saucesOptions = [
     { value: "Ketchup", label: "Ketchup", img: "/img/sauce_ketchup.png" },
-    { value: "Mayonnaise", label: "Mayonnaise", img: "/img/sauce_mayo.png" },
+    { value: "Mayonnaise", label: "Mayonnaise", img: "/img/sauce_mayonnaise.png" },
     { value: "Blanche", label: "Sauce Blanche", img: "/img/sauce_blanche.png" },
     { value: "Barbecue", label: "Barbecue", img: "/img/sauce_bbq.png" },
     { value: "Samouraï", label: "Samouraï", img: "/img/sauce_samourai.png" },
     { value: "Algérienne", label: "Algérienne", img: "/img/sauce_algerienne.png" },
     { value: "Biggy Burger", label: "Biggy Burger", img: "/img/sauce_biggy.png" },
-    { value: "Chili Thai", label: "Chili Thai", img: "/img/sauce_chili.png" },
+    { value: "Chili Thai", label: "Chili Thai", img: "/img/sauce_chili_thai.png" },
     { value: "Moutarde", label: "Moutarde", img: "/img/sauce_moutarde.png" },
     { value: "Poivre", label: "Poivre", img: "/img/sauce_poivre.png" },
     { value: "Curry", label: "Curry", img: "/img/sauce_curry.png" },
@@ -49,7 +49,7 @@ export const meatsOptions = [
   
   export const painOptions = [
     { value: "pain_maison", label: "Pain Maison", img: "/img/pain_maison.png" },
-    { value: "galette",     label: "Pain Galette", img: "/img/pain_galette.png" },
+    { value: "galette",     label: "Pain Galette", img: "img/pain_galette.png" },
   ];
   
   
@@ -238,10 +238,21 @@ export const meatsOptions = [
           title: "Choisissez votre formule",
           type: "single",
           options: [
-            { value: "seul", label: "Seul" },
             { value: "menu", label: "Menu" },
           ],
           noteForMenu: "+1 Boisson (à choisir en caisse)",
+        },
+      ],
+
+    "MENU ENFANT": [
+      {
+          stepId: "formule",
+          title: "Choisissez votre formule",
+          type: "single",
+          options: [
+            { value: "menu", label: "Menu" },
+          ],
+          noteForMenu: "+1 Boisson + 1 Frite",
         },
       ],
     
