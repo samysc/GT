@@ -42,7 +42,7 @@ app.post("/print", async (req, res) => {
   }
 });
 
-app.get("/order/:ticketCode", async (req, res) => {
+app.get("/orders/:ticketCode", async (req, res) => {
   try {
     const db = await fs.readJson(DB_PATH);
     const order = db[req.params.ticketCode];
